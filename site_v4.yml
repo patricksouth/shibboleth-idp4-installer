@@ -149,16 +149,16 @@
     - include_tasks: tasks/local_conf.yml
     - include_tasks: tasks/final.yml
 
-#  handlers:
-#    - name: Restart idp
-#      service:
-#        name: idp
-#        state: restarted
-#    - name: Restart database
-#      service:
-#        name: mariadb
-#        state: restarted
-#    - name: Restart td-agent
-#      service:
-#        name: td-agent
-#        state: restarted
+  handlers:
+    - name: Restart idp
+      service:
+        name: idp
+        state: restarted
+    - name: Restart database
+      service:
+        name: mariadb
+        state: restarted
+    - name: Restart td-agent
+      service:
+        name: td-agent
+        state: restarted
